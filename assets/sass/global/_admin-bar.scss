@@ -1,0 +1,26 @@
+.admin-bar {
+  @media only screen and (max-width: 782px) {
+    header,
+    .menu-main {
+      top: 46px;
+    }
+    #wpadminbar {
+      position: fixed !important;
+    }
+  }
+  @media only screen and (min-width: 783px) {
+    header,
+    .menu-main {
+      top: 32px;
+    }
+  }
+}
+
+// @media only screen and (max-width: 660px) {
+//   .mobile {
+//     display: block;
+//   }
+//   .desktop {
+//     display: none;
+//   }
+// }

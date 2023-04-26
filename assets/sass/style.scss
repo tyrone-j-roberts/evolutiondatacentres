@@ -1,0 +1,38 @@
+/*!
+Theme Name: Evolution - Custom theme
+Description: Custom Wordpress theme for Evolution
+Author: Neil Pursey
+Version: 1.0 
+**/
+
+@import "from-css/boilerplate";
+@import "from-css/layouts-feb21";
+
+@import "from-css/menu-jump";
+
+@import "global/admin-bar";
+@import "global/layout";
+@import "global/background";
+
+@import "blocks/hero";
+@import "blocks/homepage-intro";
+@import "blocks/image-text-row";
+@import "blocks/homepage-main-section";
+@import "blocks/meet-the-team-grid";
+
+@import "global/footer";
+
+
+
+// Site Break points, here to copy...
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 660px) {
+}
+
+@media only screen and (max-width: 500px) {
+}

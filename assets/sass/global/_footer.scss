@@ -1,0 +1,257 @@
+.footer {
+  // General Styles for Footer menu
+  #menu-footer-left,
+  #menu-footer-right {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 0;
+
+    // First level only
+    > li {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      a {
+        // padding: 0px;
+        padding: 5px 0px;
+      }
+    }
+
+    // All
+    li {
+      display: inline-block;
+      margin-left: 0;
+
+      a {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        // padding: 5px 10px;
+        width: auto;
+      }
+
+      // Sub Menu
+      .sub-menu {
+        margin-top: 0px;
+        padding-left: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li {
+          margin-bottom: 3px;
+          a {
+            font-size: 12px;
+            line-height: 15px;
+            color: #65c99a;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 0;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Custom for footer home
+  &.footer-home {
+    #menu-footer-left,
+    #menu-footer-right {
+      flex-direction: column;
+    }
+
+    #menu-footer-right {
+      margin-top: 52px;
+    }
+
+    .menu-item-home {
+      > a {
+        border: solid 1px #65c99a;
+        padding: 5px 20px !important;
+      }
+      .sub-menu {
+        margin-left: 0px;
+        margin-top: 7px !important;
+        a {
+          padding-left: 0px !important;
+        }
+      }
+    }
+  }
+
+  //Custom for footer page.
+  &.footer-page {
+    #menu-footer-left,
+    #menu-footer-right {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+
+      li {
+        margin: 0 auto 0 0;
+
+        // Selected First Level
+        &.current_page_item,
+        &.current_page_ancestor {
+          > a {
+            border: solid 1px #65c99a;
+            padding: 5px 20px;
+          }
+          .sub-menu {
+            margin-left: 0px;
+            margin-top: 7px !important;
+            a {
+              padding-left: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer Mobile
+  @media only screen and (max-width: 800px) {
+    #menu-footer-right {
+      margin-top: 0px !important;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #menu-footer-left,
+    #menu-footer-right {
+      margin-top: 0px !important;
+      width: 100%;
+      flex-direction: column !important;
+
+      li {
+        width: 100%;
+        text-align: center;
+
+        a {
+          display: inline-block;
+          text-align: center;
+          min-width: 180px;
+        }
+
+        .sub-menu {
+          width: 100%;
+          a {
+            font-size: 16px !important;
+            line-height: 21px !important;
+          }
+        }
+      }
+    }
+
+    // Mobile Header for Contact us
+    .blockRightFooter1 {
+      text-align: left;
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  //       // Sub Menu
+  //       .sub-menu {
+  //         // margin-top: 7px !important;
+  //         li {
+  //           text-align: center;
+  //           // margin: 10px 0;
+  //
+  //         }
+  //       }
+
+  //       &.menu-item-has-children {
+  //         // margin-top: 0px;
+  //       }
+  //     }
+
+  //     > li {
+  //       // margin-top: 10px;
+  //     }
+  //   }
+  //   // // 1st level no children.
+
+  //   &.footer-home {
+  //     #menu-footer-right {
+  //       // margin-top: 0px;
+  //     }
+  //   }
+  //   &.footer-page {
+  //     .sub-menu {
+  //       li {
+  //         margin-bottom: 8px !important;
+  //       }
+
+  // Contact Form.
+  .wpforms-container {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100% !important;
+      margin-bottom: 20px !important;
+      background-color: transparent !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: 1px solid #fff !important;
+      padding-top: 5px !important;
+      padding-bottom: 25px !important;
+      padding-left: 0px !important;
+      color: #fff !important;
+      text-indent: 8px !important;
+      font-weight: 400 !important;
+      font-size: 14px !important;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+      text-align: left !important;
+    }
+
+    button[type="submit"] {
+      display: inline-block !important;
+      text-align: left !important;
+      color: #65c99a !important;
+      background-color: #fff !important;
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      text-decoration: none !important;
+      padding: 10px 60px !important;
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
+      border: none !important;
+      border-radius: 26px !important;
+      -webkit-border-radius: 26px !important;
+      -moz-border-radius: 26px !important;
+      -webkit-transition: 0.2s linear !important;
+      -moz-transition: 0.2s linear !important;
+      -ms-transition: 0.2s linear !important;
+      -o-transition: 0.2s linear !important;
+      transition: 0.2s linear !important;
+
+      &:hover {
+        background-color: #65c99a !important;
+        color: #fff !important;
+        text-decoration: none !important;
+        -webkit-transition: 0.2s linear !important;
+        -moz-transition: 0.2s linear !important;
+        -ms-transition: 0.2s linear !important;
+        -o-transition: 0.2s linear !important;
+        transition: 0.2s linear !important;
+      }
+    }
+  }
+  .wp-forms-field.wpforms-has-error {
+    margin-top: 20px !important;
+  }
+  label.wpforms-error {
+    margin-top: -18px !important;
+    color: #ff6666 !important;
+  }
+}

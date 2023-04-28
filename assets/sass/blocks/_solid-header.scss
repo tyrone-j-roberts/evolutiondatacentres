@@ -1,0 +1,43 @@
+.solid-header {
+    top: auto;
+    padding: 1.6rem 0;
+    background-color: #65C99A;
+    position: sticky;
+    z-index: 200;
+    overflow: visible;
+
+    -webkit-box-shadow: 0px 1px 4px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 4px -2px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px -2px rgba(0,0,0,0.2);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 194px;
+        flex: 1;
+    }
+
+    &__nav {
+        li {
+            font-size: 1.2em;
+            > ul li {
+                font-size: 1rem;
+            }
+        }
+
+        ul.sub-menu {
+            background-color: #65C99A;
+            li {
+                padding: 0.5em;
+                width: 100%;
+                a.menuLine::after {
+                    background-color: #0A8036;
+                }
+            }
+        }
+    }
+}

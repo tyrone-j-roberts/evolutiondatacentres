@@ -534,8 +534,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding: 5em 0;
   text-align: center;
   overflow: hidden;
   font-size: 18px;
@@ -2055,7 +2054,7 @@ textarea.no-autofill-bkg:-webkit-autofill {
   background-position: right bottom; }
 
 .block7 {
-  background-image: url(assets/images/bgBlockPinkBL.png);
+  background-image: url(assets/images/bgBlockGreenBL.png);
   background-repeat: no-repeat;
   background-position: left bottom; }
 
@@ -2968,12 +2967,43 @@ object {
     object-fit: cover;
     object-position: center; }
 
-.hero--block .headWrap {
+.solid-header {
+  top: auto;
+  padding: 1.6rem 0;
+  background-color: #65C99A;
+  position: sticky;
+  z-index: 200;
+  overflow: visible;
+  -webkit-box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.2); }
+  .solid-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .solid-header__logo {
+    max-width: 194px;
+    flex: 1; }
+  .solid-header__nav li {
+    font-size: 1.2em; }
+    .solid-header__nav li > ul li {
+      font-size: 1rem; }
+  .solid-header__nav ul.sub-menu {
+    background-color: #65C99A; }
+    .solid-header__nav ul.sub-menu li {
+      padding: 0.5em;
+      width: 100%; }
+      .solid-header__nav ul.sub-menu li a.menuLine::after {
+        background-color: #0A8036; }
+
+.hero--block .headWrap,
+.logo-hero--block .headWrap {
   background: transparent;
   width: 100%;
   display: block; }
 
-.hero--block .head {
+.hero--block .head,
+.logo-hero--block .head {
   width: 88%;
   max-width: 1096px;
   display: block;
@@ -2981,7 +3011,8 @@ object {
   margin-right: auto;
   text-align: center; }
 
-.hero--block .logo {
+.hero--block .logo,
+.logo-hero--block .logo {
   float: left;
   clear: none;
   position: relative;
@@ -2992,7 +3023,8 @@ object {
   margin-bottom: 30px;
   z-index: 100; }
 
-.hero--block .navwrapper {
+.hero--block .navwrapper,
+.logo-hero--block .navwrapper {
   position: relative;
   z-index: 99;
   float: right;
@@ -3003,7 +3035,8 @@ object {
   margin-top: 20px;
   font-weight: 700; }
 
-.hero--block .gridContainerHeadSite {
+.hero--block .gridContainerHeadSite,
+.logo-hero--block .gridContainerHeadSite {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -3013,7 +3046,8 @@ object {
   z-index: 2;
   float: none; }
 
-.hero--block .mainHead {
+.hero--block .mainHead,
+.logo-hero--block .mainHead {
   position: relative;
   z-index: 2;
   display: block;
@@ -3023,7 +3057,8 @@ object {
   max-width: 1096px;
   text-align: center; }
 
-.hero--block .titlesWrapper {
+.hero--block .titlesWrapper,
+.logo-hero--block .titlesWrapper {
   display: block;
   text-align: left;
   width: 100%;
@@ -3032,7 +3067,8 @@ object {
   padding-bottom: 200px;
   text-align: center; }
 
-.hero--block .titlesWrapperSite {
+.hero--block .titlesWrapperSite,
+.logo-hero--block .titlesWrapperSite {
   display: block;
   text-align: left;
   width: 100%;
@@ -3040,7 +3076,8 @@ object {
   padding-top: 260px;
   padding-bottom: 220px; }
 
-.hero--block .title {
+.hero--block .title,
+.logo-hero--block .title {
   text-align: center;
   width: 100%;
   margin-bottom: 35px;
@@ -3050,7 +3087,8 @@ object {
   font-weight: 600;
   color: #fff; }
 
-.hero--block .strapline {
+.hero--block .strapline,
+.logo-hero--block .strapline {
   width: 100%;
   margin-bottom: 35px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -3064,9 +3102,11 @@ object {
   text-align: center; }
 
 @media only screen and (max-width: 1000px) {
-  .hero--block .head {
+  .hero--block .head,
+  .logo-hero--block .head {
     width: 100%; }
-  .hero--block .logo {
+  .hero--block .logo,
+  .logo-hero--block .logo {
     float: none;
     clear: both;
     margin-left: auto;
@@ -3074,38 +3114,66 @@ object {
     height: 40px;
     margin-top: 30px;
     margin-bottom: 16px; }
-  .hero--block .navwrapper {
+  .hero--block .navwrapper,
+  .logo-hero--block .navwrapper {
     float: none;
     clear: both;
     margin-left: auto;
     margin-right: auto; }
-  .hero--block .titlesWrapper {
+  .hero--block .titlesWrapper,
+  .logo-hero--block .titlesWrapper {
     padding-top: 200px; }
-  .hero--block .titlesWrapperSite {
+  .hero--block .titlesWrapperSite,
+  .logo-hero--block .titlesWrapperSite {
     padding-top: 160px; } }
 
 @media only screen and (max-width: 660px) {
-  .hero--block .headWrap {
+  .hero--block .headWrap,
+  .logo-hero--block .headWrap {
     float: none; }
-  .hero--block .head {
+  .hero--block .head,
+  .logo-hero--block .head {
     float: none; }
-  .hero--block .logo {
+  .hero--block .logo,
+  .logo-hero--block .logo {
     float: left;
     margin-left: 4%;
     clear: none;
     display: block; }
-  .hero--block .navwrapper {
+  .hero--block .navwrapper,
+  .logo-hero--block .navwrapper {
     margin-top: 0;
     width: 100%;
     position: relative;
     top: -66px; }
-  .hero--block .titlesWrapper {
+  .hero--block .titlesWrapper,
+  .logo-hero--block .titlesWrapper {
     text-align: center;
     padding-top: 184px;
     padding-bottom: 110px; }
-  .hero--block .titlesWrapperSite {
+  .hero--block .titlesWrapperSite,
+  .logo-hero--block .titlesWrapperSite {
     padding-top: 240px;
     text-align: center; } }
+
+.logo-hero--block .background {
+  background-color: #000000; }
+  .logo-hero--block .background .image {
+    opacity: 0.7; }
+
+.logo-hero--block .mainHead {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .logo-hero--block .mainHead .titlesWrapperSite {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .logo-hero--block .mainHead .titlesWrapperSite img {
+      width: 90%;
+      max-width: 450px;
+      margin-bottom: 7em; }
 
 .homepage-intro {
   padding: 4rem 0;
@@ -3139,8 +3207,16 @@ object {
     align-items: center; }
   .image-text-row__image {
     width: 40%;
+    padding-top: 40%;
     margin-right: 5em;
     position: relative; }
+    .image-text-row__image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
     .image-text-row__image .decoration {
       position: absolute;
       top: 0;

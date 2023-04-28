@@ -10,14 +10,13 @@
 
 // Get Field data
 $copy = get_field('copy');
-$background_class = get_field('background_colour');
 
 $block_slug = "banner";
 include(locate_template('/acf-blocks/common/block_header.php')); ?>
  
 
-<div class="gridContainerDigital2 <?= $background_class ?>">
-    <div class="centreWrapperNarrow <?= $background_class == 'whiteBG' ? 'darkgrey' : 'white' ?>">
+<div class="gridContainerDigital2 greenBG">
+    <div class="centreWrapperNarrow">
         <h3><?= $copy ?></h3>
     </div>
 </div>

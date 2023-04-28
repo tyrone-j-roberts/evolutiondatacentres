@@ -11,8 +11,11 @@
 // Get Field data
 $title = get_field('title');
 $team_members = new WP_Query(array(
-    'posts_per_page'    => -1,
-    'post_type'            => 'team_member'
+    'posts_per_page' => -1,
+    'post_type'  => 'team_member',
+    'meta_key' => 'leadership_team',
+    'meta_value' => "1",
+    'meta_compare_key' => '='
 ));
 
 
@@ -49,7 +52,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
             <?php if ($i % 2) :  ?>
 
-                <div class="centreWrapper">
+                <div class="centreWrapper clearfix">
 
                     <div class="blockRight3 block5 bMargin50">
                         <div class="teamImgWrap">
@@ -66,18 +69,18 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                 </div>
             <?php else : ?>
 
-                <div class="centreWrapper">
+                <div class="centreWrapper clearfix">
                     <?php
                     $image_wrap_classes = "";
                     $image_inner_class = "";
                     if (($i / 2) % 3 == 0) { // every 3rd pink
                         // echo "top pink";
-                        $image_wrap_classes = "blockLeft3c block9 bMargin50";
+                        $image_wrap_classes = "blockLeft3c block5 bMargin50";
                         $image_inner_class = 'teamImgWrap';
                     } else {
                         // echo "bottom pink";
                         $image_wrap_classes = "blockLeft3c block7 bMargin50";
-                        $image_inner_class = 'teamImgWrap2';
+                        $image_inner_class = 'teamImgWrap';
                     }
                     ?>
                     <div class="<?php echo $image_wrap_classes ?>">
@@ -87,7 +90,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </div>
 
                     <div class="blockRight3c bMargin50">
-                        <h4 class="darkGrey"><?php echo $firstname ?> <span class="pink"><?php echo $lastname  ?></span></h4>
+                        <h4 class="darkGrey"><?php echo $firstname ?> <span class="green"><?php echo $lastname  ?></span></h4>
                         <h5 class="darkGrey"><?php echo $job_title ?></h5>
                         <?php echo $bio ?>
                     </div>

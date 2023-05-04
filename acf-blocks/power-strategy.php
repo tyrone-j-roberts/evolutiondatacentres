@@ -24,14 +24,14 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
     <?php include(locate_template('/acf-blocks/common/background.php')); ?>
 
-    <div class="centreWrapper txtLeft">
+    <div class="centreWrapper clearfix txtLeft">
         <h5 class="darkGrey"><?php echo $title ?></h5>
         <?php echo $introduction ?>
     </div>
 
-    <div class="centreWrapper">
+    <div class="centreWrapper clearfix">
 
-        <div class="blockLeft1 txtRight">
+        <div class="blockLeft1 txtLeft">
 
             <?php $i = 0 ?>
             <?php if (have_rows('copy')) : ?>

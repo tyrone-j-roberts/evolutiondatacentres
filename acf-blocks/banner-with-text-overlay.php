@@ -33,7 +33,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     <div class="centreWrapper white">
 
         <div class="<?php echo $copy_border_css ?>">
-            <h5 class="white"><?php echo $title ?></h5>
+            <h4 class="white"><?php echo $title ?></h4>
             <?php echo $copy ?>
         </div>
 

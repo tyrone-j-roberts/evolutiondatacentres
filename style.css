@@ -1068,7 +1068,7 @@ p {
   clear: none;
   display: block;
   float: right;
-  width: 45%;
+  width: 50%;
   text-align: left;
   font-weight: 400;
   padding: 5% 0 0 5%; }
@@ -1114,7 +1114,8 @@ p {
   width: 29.3%;
   margin-left: 2%;
   margin-right: 2%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  line-height: 1.4; }
 
 .teamTitle {
   float: none;
@@ -2901,6 +2902,9 @@ object {
   max-width: 100%;
   height: auto; }
 
+h5 {
+  margin-bottom: 1em; }
+
 .greyLineDiv2 {
   display: block;
   float: left;
@@ -3052,11 +3056,24 @@ object {
 .slick-arrow.slick-hidden {
   display: none; }
 
+.banner-with-text-overlay--block {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 300;
+  line-height: 1.4; }
+  .banner-with-text-overlay--block h4 {
+    font-weight: 500;
+    margin-bottom: 0.6em; }
+
 .banner--block p {
   font-size: 1.3em;
   color: #ffffff;
   line-height: 1.4;
   font-weight: 500; }
+
+.power-strategy--block .centreWrapper {
+  font-weight: 400;
+  line-height: 1.4; }
 
 .solid-header {
   top: 0;
@@ -3369,6 +3386,17 @@ object {
     -webkit-box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 768px) {
+    .image-text-row__container {
+      flex-direction: column; }
+    .image-text-row__image {
+      width: 80%;
+      padding-top: 80%;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 0 auto 2em auto; }
+    .image-text-row__text {
+      text-align: center; } }
 
 .homepage-main-section {
   padding: 4em 0; }
@@ -3502,6 +3530,30 @@ object {
           font-size: 16px; }
           .homepage-main-section__content .icon-text-rows .icon-text-row .text h4 {
             font-size: 1.4em; }
+  @media (max-width: 850px) {
+    .homepage-main-section__slider {
+      flex-direction: column; }
+      .homepage-main-section__slider .images,
+      .homepage-main-section__slider .text {
+        width: 100%; }
+      .homepage-main-section__slider .images .image {
+        padding-top: 60%; }
+      .homepage-main-section__slider .text {
+        padding: 110px 40px;
+        font-size: 1.4em;
+        text-align: center; }
+        .homepage-main-section__slider .text::before, .homepage-main-section__slider .text::after {
+          position: absolute;
+          top: 20px;
+          left: 30px; }
+        .homepage-main-section__slider .text::after {
+          top: auto;
+          left: auto;
+          bottom: 20px;
+          right: 30px;
+          transform: rotate(180deg); }
+    .homepage-main-section__content .columns {
+      flex-direction: column; } }
 
 .meet-the-team-grid {
   padding: 4em 0;
@@ -3582,6 +3634,12 @@ object {
         height: 1.1em;
         width: 1.1em;
         background-size: 100% 100%; }
+  @media (max-width: 768px) {
+    .meet-the-team-grid__grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) {
+    .meet-the-team-grid__grid {
+      grid-template-columns: 1fr; } }
 
 .markets-map-locations__map {
   position: relative;
@@ -3634,6 +3692,20 @@ object {
         .markets-map-locations__location--alt .location-content__text h3 {
           color: inherit; }
 
+@media (max-width: 768px) {
+  .markets-map-locations__location .location-content {
+    flex-direction: column;
+    gap: 5em; }
+    .markets-map-locations__location .location-content__media {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; }
+      .markets-map-locations__location .location-content__media .pie-chart {
+        max-width: 300px;
+        margin: 0 auto; }
+    .markets-map-locations__location .location-content__text {
+      width: 100%; } }
+
 .image-cycle {
   width: 100%; }
   .image-cycle__images .image {
@@ -3676,6 +3748,9 @@ object {
     transition: fill 0.2s ease; }
     .map-wrapper path.map-location:hover {
       fill: #c96594 !important; }
+  @media (max-width: 768px) {
+    .map-wrapper::after {
+      font-size: 1.6em; } }
 
 #LocationSection_Indonesia .location-content__media {
   padding-top: 2em; }
@@ -3683,6 +3758,14 @@ object {
     transform: scale(1.5); }
   #LocationSection_Indonesia .location-content__media .pie-chart {
     margin-top: 2em; }
+
+@media (max-width: 768px) {
+  #LocationSection_Indonesia .location-content__media {
+    padding-top: 0; }
+    #LocationSection_Indonesia .location-content__media img:first-child {
+      transform: none; }
+    #LocationSection_Indonesia .location-content__media .pie-chart {
+      margin-top: 0; } }
 
 .footer #menu-footer-left,
 .footer #menu-footer-right {

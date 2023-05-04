@@ -109,4 +109,20 @@
         //     text-align: right;
         // }
     }
+
+    @media(max-width: 768px) {
+        &__container {
+            flex-direction: column;
+        }
+        &__image {
+            width: 80%;
+            padding-top: 80%;
+            max-width: 500px;
+            max-height: 500px;
+            margin: 0 auto 2em auto;
+        }
+        &__text {
+            text-align: center;
+        }
+    } 
 }

@@ -17,6 +17,11 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
         <div class="homepage-main-section__slider-wrapper clearfix">
             <div class="homepage-main-section__slider">
                 <div class="images">
+                    <div class="image-slide">
+                        <div class="image">
+                            <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/EvolutionDC1.jpg" alt="Evolution" />
+                        </div>
+                    </div>
                     <?php for ($i = 1; $i <= 5; $i++): ?>
                     <div class="image-slide">
                         <div class="image">

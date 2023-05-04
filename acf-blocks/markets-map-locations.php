@@ -15,7 +15,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     
     <div class="markets-map-locations__map">
         <div class="container">
-            <h3>Our Regions</h3>
+            <h3>Our Target Regions</h3>
             <div class="map-wrapper" data-location-tooltip-text="">
                 <?php include get_template_directory() . '/template-parts/evo-map.svg.php' ?>
             </div>
@@ -67,9 +67,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </div>
                 </div>
                 <div class="location-content__media">
-                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-location.svg" 
-                        style="width: 85%; margin: 0 auto; display: block;"
-                        alt="Philippines Cavite" />
+                    <div style="width: 85%; margin: 0 auto; display: block;">
+                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/philippines-location.svg"); ?>
+                    </div>
                     
                     <div class="pie-chart">
                         <h4>Renewable Energy Mix</h4>
@@ -116,9 +116,10 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                 </div>
                 <div class="location-content__media">
-                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-location.svg" 
-                        style="width: 85%; margin: 0 auto; display: block;"
-                        alt="Philippines Bankok" />
+
+                    <div style="width: 85%; margin: 0 auto; display: block;">
+                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/thailand-location.svg"); ?>
+                    </div>
                     
 
                     <div class="pie-chart">

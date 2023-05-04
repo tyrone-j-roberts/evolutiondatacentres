@@ -180,4 +180,43 @@
             }
         }
     }
+
+    @media (max-width: 850px) {
+        &__slider {
+            flex-direction: column;
+            .images,
+            .text {
+                width: 100%;
+            }
+            .images {
+                .image {
+                    padding-top: 60%;
+                }
+            }
+            .text {
+                padding: 110px 40px;
+                font-size: 1.4em;
+                text-align: center;
+                &::before,
+                &::after {
+                    position: absolute;
+                    top:  20px;
+                    left: 30px;
+                }
+                &::after {
+                    top: auto;
+                    left: auto;
+                    bottom: 20px;
+                    right: 30px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &__content {
+            .columns {
+                flex-direction: column;
+            }
+        }
+    }
 }

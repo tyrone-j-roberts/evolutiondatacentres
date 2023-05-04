@@ -10,6 +10,7 @@
 
 // Get Field data
 
+$appearance = get_field('appearance');
 $image_options = get_field('image_options');
 $heading = get_field('heading');
 $text = get_field('text');
@@ -19,7 +20,7 @@ $block_slug = "image-text-row";
 
 include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
-<div class="image-text-row">
+<div class="image-text-row appearance-<?= $appearance ?>">
 
     <?php if ($image_options['decoration_position'] == 'no-decoration'): ?>
     <span class="image-text-row__decoration"></span>
@@ -27,7 +28,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
     <div class="container image-text-row__container">
         <div class="image-text-row__image <?= $image_options['decoration_position'] ?>">
-            <?php if ($image_options['decoration_position'] != 'no-decoration'): ?>
+            <?php if ($image_options['decoration_position'] != 'no-decoration' && $appearance != 'alt'): ?>
                 <span class="decoration"></span>
             <?php endif; ?>
             <?php if ($image_options['image']): ?>

@@ -14,40 +14,22 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 <div class="homepage-main-section">
     <span class="white-top"></span>
     <div class="container">
-        <div class="homepage-main-section__slider clearfix">
-            <div class="cycle-slideshow-outer">
-                <button class="slider-prev" data-cycle-cmd="prev" data-cycle-context="#hompage-main-cycle-<?= $block['id'] ?>"></button>
-                <div id="hompage-main-cycle-<?= $block['id'] ?>" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-speed="500" data-cycle-pause-on-hover="true" data-cycle-timeout="5000" data-cycle-slides="section">
-
-                        <section>
-                        
-                            <div class="homepage-main-section__slide">
-                                <div class="image">
-                                    <img src="https://placehold.co/1150x990.png" alt="Placeholder" />
-                                </div>
-                                <div class="text">
-                                    <p>
-                                        The next generation Pan-Asian sustainable data centre platform. 
-                                    </p>
-                                </div>
-                            </div>
-
-                        </section>
-                        <section>
-                            <div class="homepage-main-section__slide">
-                                <div class="image">
-                                    <img src="https://placehold.co/1150x990.png" alt="Placeholder" />
-                                </div>
-                                <div class="text">
-                                    <p>
-                                       Lorem ipsum dolor sit amet consectur dolec in
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    
+        <div class="homepage-main-section__slider-wrapper clearfix">
+            <div class="homepage-main-section__slider">
+                <div class="images">
+                    <?php for ($i = 1; $i <= 5; $i++): ?>
+                    <div class="image-slide">
+                        <div class="image">
+                            <img src="https://evolutiondatacentres.com/wp-content/uploads/2023/02/slider<?= $i ?>.jpg" alt="Slide <?= $i ?>" />
+                        </div>
+                    </div>
+                    <?php endfor; ?>
                 </div>
-                <button class="slider-next" data-cycle-cmd="next" data-cycle-context="#hompage-main-cycle-<?= $block['id'] ?>"></button>
+                <div class="text">
+                    <p>
+                        The next generation Pan-Asian sustainable data centre platform. 
+                    </p>
+                </div>
             </div>
         </div>
         <div class="homepage-main-section__content">
@@ -60,14 +42,14 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <p>
                         We always work with local partners, who provide on the ground support and knowledge to ensure a great outcome for our clients
                     </p>
-                    <a class="button-link" href="#test">Learn more</a>
+                    <a class="button-link" href="/our-approach">Learn more</a>
                 </div>
                 <div class="column-2">
                     <div class="icon-text-rows">
                         
                         <div class="icon-text-row">
                             <div class="icon">
-                                <img src="" />
+                                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/Leadership.svg" />
                             </div>
                             <div class="text">
                                 <h4>Leadership</h4>
@@ -79,7 +61,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
                         <div class="icon-text-row">
                             <div class="icon">
-                                <img src="" />
+                                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/Focus.svg" alt="Focus Icon" />
                             </div>
                             <div class="text">
                                 <h4>Focus</h4>
@@ -91,7 +73,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
                         <div class="icon-text-row">
                             <div class="icon">
-                                <img src="" />
+                                <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/evolution-emblem.svg" alt="Evolution Icon" />
                             </div>
                             <div class="text">
                                 <h4>Vision</h4>
@@ -108,5 +90,49 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     </div>
     <span class="white-bottom"></span>
 </div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+
+    jQuery(document).ready(function($){
+        $('.homepage-main-section__slider .images').slick({
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            nextArrow: `
+                <button type="button" class="slick-next">
+                    <svg width="100%" height="100%" viewBox="0 0 241 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+                        <g transform="matrix(5.55556,0,0,5.55556,123.932,0)">
+                            <path d="M0,42C11.598,42 21,32.598 21,21C21,9.402 11.598,0 0,0C-11.598,0 -21,9.402 -21,21C-21,32.598 -11.598,42 0,42" style="fill:white;fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(5.55556,0,0,5.55556,57.2654,116.667)">
+                            <path d="M0,0L20.328,0" style="fill:none;fill-rule:nonzero;stroke:rgb(101,201,154);stroke-width:5px;"/>
+                        </g>
+                        <g transform="matrix(5.55556,0,0,5.55556,124.049,159.574)">
+                            <path d="M0,-15.447L8.307,-7.723L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(101,201,154);stroke-width:5px;"/>
+                        </g>
+                    </svg>
+                </button>
+            `,
+            prevArrow: `
+                <button type="button" class="slick-prev">
+                    <svg width="100%" height="100%" viewBox="0 0 241 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+                        <g transform="matrix(5.55556,0,0,5.55556,116.667,0)">
+                            <path d="M0,42C11.598,42 21,32.598 21,21C21,9.402 11.598,0 0,0C-11.598,0 -21,9.402 -21,21C-21,32.598 -11.598,42 0,42" style="fill:white;fill-rule:nonzero;"/>
+                        </g>
+                        <g transform="matrix(-5.55556,0,0,5.55556,70.4,116.667)">
+                            <path d="M-20.328,0L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(101,201,154);stroke-width:5px;"/>
+                        </g>
+                        <g transform="matrix(5.55556,0,0,5.55556,116.55,73.7589)">
+                            <path d="M0,15.447L-8.307,7.723L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(101,201,154);stroke-width:5px;"/>
+                        </g>
+                    </svg>
+                </button>
+            `
+        });
+    });
+
+</script>
 
 <?php include(locate_template('/acf-blocks/common/block_footer.php'));

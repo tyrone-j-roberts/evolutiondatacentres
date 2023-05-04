@@ -30,11 +30,8 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     </div>
 
     <div class="centreWrapper">
-        <div class="blockLeft1">
-            <img src="<?php echo $image['url'] ?>" width="<?php echo $image['width'] ?>" height="<?php echo $image['height'] ?>" alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>" />
 
-        </div>
-        <div class="blockRight1 txtLeft">
+        <div class="blockLeft1 txtRight">
 
             <?php $i = 0 ?>
             <?php if (have_rows('copy')) : ?>
@@ -52,6 +49,10 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
             <?php endif; ?>
 
 
+        </div>
+
+        <div class="blockRight1">
+            <img src="<?php echo $image['url'] ?>" width="<?php echo $image['width'] ?>" height="<?php echo $image['height'] ?>" alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>" />
         </div>
     </div>
 

@@ -1,0 +1,153 @@
+.markets-map-locations {
+    &__map {
+        position: relative;
+        padding: 3em 0;
+        h3 {
+            color: inherit;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+    }
+    
+    &__location {
+        padding: 3em 0;
+        background-color: #65c99a;
+
+        .location-content {
+            display: flex;
+            color: #ffffff;
+            &__text {
+                width: 52%;
+                h3 {
+                    margin-bottom: 1em;
+                    font-size: 1.4em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 1em;
+                    line-height: 1.4;
+                    margin-bottom: 1.5em;
+                }
+                img {
+                    margin: 1em 0;
+                }
+            }
+            &__media {
+                width: 48%;
+                padding-left: 10%;
+                display: flex;
+                flex-direction: column;
+                gap: 4em;
+
+                .pie-chart {
+                    h4 {
+                        text-align: center;
+                        margin-bottom: 1em;
+                        font-size: 1.4em;
+                    }
+                }
+            }
+            
+        }
+
+        &--alt {
+            background-color: #ffffff;
+            .location-content {
+                flex-direction: row-reverse;
+                color: #444;
+                &__media {
+                    padding-right: 10%;
+                    padding-left:  0;
+                    .pie-chart {
+                        h4 {
+                            color: inherit;
+                        }
+                    }
+                }
+
+                &__text {
+                    text-align: right;
+                    h3 {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.image-cycle {
+    width: 100%;
+    &__images {
+        .image {
+            padding-top: 71.5%;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .slick-slide {
+
+        }
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            padding: 0;
+            height: 32px;
+            width: 32px;
+            z-index: 2;
+        }
+        .slick-next {
+            right: -16px;
+        }
+        .slick-prev {
+            left: -16px;
+        }
+    }
+}
+
+.map-wrapper {
+    position: relative;
+    &::after {
+        content: attr(data-location-tooltip-text);
+        position: absolute;
+        top: 32%;
+        right: 20%;
+        text-align: center;
+        font-size: 1.6em;
+    }
+    path.map-location {
+        cursor: pointer;
+        transition: fill 0.2s ease;
+
+        &:hover {
+            fill: #c96594 !important;
+        }
+    }      
+}
+
+
+#LocationSection_Indonesia {
+    .location-content__media {
+        padding-top: 2em;
+
+        img:first-child {
+            transform: scale(1.5);
+        }
+        
+        .pie-chart {
+            margin-top: 2em;
+        }
+    }
+}

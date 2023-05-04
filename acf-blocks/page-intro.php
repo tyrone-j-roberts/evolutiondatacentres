@@ -10,14 +10,22 @@
 
 // Get Field data
 $copy = get_field('copy');
+$text_size = get_field('text_size');
+
+if (empty($text_size)) {
+    $text_size = 'text-large';
+}
 
 $block_slug = "banner";
 include(locate_template('/acf-blocks/common/block_header.php')); ?>
- 
 
 <div class="gridContainerDigital2 greenBG">
     <div class="centreWrapperNarrow">
+        <?php if ($text_size == 'text-large'): ?>
         <h3><?= $copy ?></h3>
+        <?php elseif ($text_size == 'text-normal'): ?>
+        <p><?= $copy ?></p>
+        <?php endif; ?>
     </div>
 </div>
 

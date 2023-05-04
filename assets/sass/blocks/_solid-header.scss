@@ -1,5 +1,5 @@
 .solid-header {
-    top: auto;
+    top: 0;
     padding: 1.6rem 0;
     background-color: #65C99A;
     position: sticky;
@@ -23,7 +23,7 @@
 
     &__nav {
         li {
-            font-size: 1.2em;
+            font-size: 1.1em;
             > ul li {
                 font-size: 1rem;
             }
@@ -38,6 +38,19 @@
                     background-color: #0A8036;
                 }
             }
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding: 1rem 0;
+
+        &__logo {
+            max-width: 140px;
+            flex: 1;
+        }
+
+        .orion-menu>li.showhide {
+            height: 62px;
         }
     }
 }

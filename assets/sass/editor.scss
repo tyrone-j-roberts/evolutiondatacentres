@@ -40,12 +40,19 @@
 
 @import "global/layout";
 @import "global/background";
+
+@import "slick/slick";
+
+@import "blocks/page-intro";
 @import "blocks/solid-header";
 @import "blocks/hero";
 @import "blocks/homepage-intro";
 @import "blocks/image-text-row";
 @import "blocks/homepage-main-section";
 @import "blocks/meet-the-team-grid";
+@import "blocks/markets-map-locations";
+
+
 
 h1 {
   color: #333;

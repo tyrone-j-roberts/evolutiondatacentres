@@ -3064,6 +3064,19 @@ h5 {
   .banner-with-text-overlay--block h4 {
     font-weight: 500;
     margin-bottom: 0.6em; }
+  .banner-with-text-overlay--block .blockLeft3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .banner-with-text-overlay--block .blockLeft3 .image-wrapper {
+      padding-right: 10%; }
+  @media (max-width: 801px) {
+    .banner-with-text-overlay--block .blockLeft3 {
+      position: relative;
+      top: auto;
+      transform: none; }
+      .banner-with-text-overlay--block .blockLeft3 .image-wrapper {
+        padding-right: 0; } }
 
 .banner--block p {
   font-size: 1.3em;
@@ -3314,7 +3327,7 @@ h5 {
       font-size: 1.2em; } }
 
 .image-text-row {
-  padding: 4em; }
+  padding: 4em 0; }
   .image-text-row--block {
     background-color: #65C99A; }
   .image-text-row__container {
@@ -3369,7 +3382,8 @@ h5 {
     .image-text-row__text h3 {
       font-size: 1.8em;
       font-weight: 500;
-      margin-bottom: 0.6em; }
+      margin-bottom: 0.6em;
+      line-height: 1.4; }
     .image-text-row__text p {
       font-size: 1.3em;
       margin-bottom: 20px;
@@ -3396,6 +3410,16 @@ h5 {
       max-height: 500px;
       margin: 0 auto 2em auto; }
     .image-text-row__text {
+      text-align: center; }
+    .image-text-row.appearance-alt .image-text-row__container {
+      flex-direction: column-reverse; }
+    .image-text-row.appearance-alt .image-text-row__image {
+      width: 80%;
+      padding-top: 80%;
+      max-width: 500px;
+      max-height: 500px;
+      margin: 0 auto 2em auto; }
+    .image-text-row.appearance-alt__text {
       text-align: center; } }
 
 .homepage-main-section {
@@ -3563,7 +3587,8 @@ h5 {
     .meet-the-team-grid__text h3 {
       font-size: 1.8em;
       color: inherit;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: 500; }
     .meet-the-team-grid__text p {
       font-size: 1.4em;
       font-weight: 300; }
@@ -3647,7 +3672,8 @@ h5 {
   .markets-map-locations__map h3 {
     color: inherit;
     text-align: center;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    font-weight: 500; }
 
 .markets-map-locations__location {
   padding: 3em 0;
@@ -3750,12 +3776,12 @@ h5 {
       fill: #c96594 !important; }
   @media (max-width: 768px) {
     .map-wrapper::after {
-      font-size: 1.6em; } }
+      font-size: 1.2em; } }
 
 #LocationSection_Indonesia .location-content__media {
   padding-top: 2em; }
   #LocationSection_Indonesia .location-content__media img:first-child {
-    transform: scale(1.5); }
+    transform: scale(1.2); }
   #LocationSection_Indonesia .location-content__media .pie-chart {
     margin-top: 2em; }
 

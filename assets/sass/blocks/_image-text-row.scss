@@ -1,5 +1,5 @@
 .image-text-row {
-    padding: 4em;
+    padding: 4em 0;
     &--block {
         background-color: #65C99A;
     } 
@@ -81,6 +81,7 @@
             font-size: 1.8em;
             font-weight: 500;
             margin-bottom: 0.6em;
+            line-height: 1.4;
         }
         p {
             font-size: 1.3em;
@@ -123,6 +124,22 @@
         }
         &__text {
             text-align: center;
+        }
+
+        &.appearance-alt {
+            .image-text-row__container {
+                flex-direction: column-reverse;
+            }
+            .image-text-row__image {
+                width: 80%;
+                padding-top: 80%;
+                max-width: 500px;
+                max-height: 500px;
+                margin: 0 auto 2em auto;
+            }
+            &__text {
+                text-align: center;
+            }
         }
     } 
 }

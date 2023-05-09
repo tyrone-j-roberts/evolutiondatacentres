@@ -6,6 +6,7 @@
             color: inherit;
             text-align: center;
             margin-bottom: 2em;
+            font-weight: 500;
         }
     }
     
@@ -160,7 +161,7 @@
     
     @media(max-width: 768px) {
         &::after {
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
     }
 }
@@ -171,7 +172,7 @@
         padding-top: 2em;
 
         img:first-child {
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
         
         .pie-chart {

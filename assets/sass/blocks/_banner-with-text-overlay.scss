@@ -8,5 +8,26 @@
         font-weight: 500;
         margin-bottom: 0.6em;
     }
+
+    .blockLeft3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        .image-wrapper {
+            padding-right: 10%;
+        }
+    }
+
+    @media (max-width: 801px) {
+        .blockLeft3 {
+            position: relative;
+            top: auto;
+            transform: none;
+            .image-wrapper {
+                padding-right: 0;
+            }
+        }
+    }
+    
     
 }

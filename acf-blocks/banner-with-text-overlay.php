@@ -12,6 +12,7 @@
 $title = get_field('title');
 $copy = get_field('copy');
 $copy_border_style = get_field('copy_border_style');
+$image = get_field('image');
 
 $copy_border_css = '';
 if ($copy_border_style == 'green') {
@@ -30,7 +31,15 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
     <?php include(locate_template('/acf-blocks/common/background.php')); ?>
 
-    <div class="centreWrapper white">
+    <div class="centreWrapper clearfix white">
+
+        <?php if (!empty($image)): ?>
+        <div class="blockLeft3">
+            <div class="image-wrapper">
+                <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>" />
+            </div>
+        </div>
+        <?php endif; ?>
 
         <div class="<?php echo $copy_border_css ?>">
             <h4 class="white"><?php echo $title ?></h4>

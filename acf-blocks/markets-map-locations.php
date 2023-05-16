@@ -15,8 +15,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     
     <div class="markets-map-locations__map">
         <div class="container">
-            <h3>Our Target Regions</h3>
-            <div class="map-wrapper" data-location-tooltip-text="">
+            <h3>Target Regions and Market Drivers</h3>
+            <div class="map-wrapper">
+                <?php include get_template_directory() . '/template-parts/map-locations-overview.php' ?>
                 <?php include get_template_directory() . '/template-parts/evo-map.svg.php' ?>
             </div>
         </div>
@@ -243,13 +244,17 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
         for (let i = 0; i < mapLocations.length; i++) {
             mapLocations[i].addEventListener('mouseenter', function(e) {
                 var locationName = e.currentTarget.dataset.location;
+                var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
+                locationOverviewElement.classList.add('active')
                 mapWrapperEl.dataset.locationTooltipText = locationName;
             });
 
             mapLocations[i].addEventListener('click', function(e) {
                 var locationName = e.currentTarget.dataset.location;
                 var locationElement = document.getElementById('LocationSection_' + locationName);
+                
                 if (!locationElement) return;
+                
                 var offset = 10;
 
                 var solidHeader = document.querySelector('header.solid-header');
@@ -263,7 +268,8 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
             mapLocations[i].addEventListener('mouseleave', function(e) {
                 var locationName = e.currentTarget.dataset.location;
-                mapWrapperEl.dataset.locationTooltipText = "";
+                var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
+                locationOverviewElement.classList.remove('active')
             });
         }
 

@@ -31,29 +31,36 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <h3>Philippines</h3>
                     <p>
                         <strong>Population dynamics</strong><br/>
-                        The Philippines has a young population who are heavy users of technology. Their
-                        average daily use of social media is over four hours which is 60% higher than the rest of
-                        the world. 82% of Filipinos have social media accounts, with a median age of 26.3 and
-                        1.5% population growth annually. The Philippines has a GDP of 394 billion USD, making it
-                        an attractive region for technology investment.
+                        The Philippines has a young population who are heavy users of technology. 
+                        Their average daily use of social media is over four hours which is 60% higher than the rest of the world. 
+                        82% of Filipinos have social media accounts, with a median age of 26.3 and 1.5% population growth annually. 
+                        The Philippines has a GDP of 394 billion USD, making it an attractive region for technology investment.
                     </p>
+                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable energy</strong><br/>
-                        The energy mix in the Philippines is currently made up of 23% clean energy, including a
-                        large natural geothermal energy resource. The government has recently announced a
-                        moratorium on coal power generation and has set a target of 100% green electricity by
-                        2040.
+                        The Philippines’ energy market is liberalised with generation, distribution, and sales open to private participation. 
+                        The energy mix is dominated by coal 47% and natural gas 22%; hydro and geothermal energy account for 15% and 7% respectively, while solar makes up &lt;4%.
+                        <br/><br/>
+                        There is a national target to increase the share of renewable energy in the primary mix to 50% by 2040, this includes the addition of new renewable capacity of 9.9GW by 2030.
                     </p>
-                    <p>
-                        <strong>Geographic challenges</strong><br />
-                        The Philippines is affected by an average of 20 typhoons per year, and is exposed to a
-                        risk of flooding. It is susceptible to earthquakes and volcanic eruptions.
-                    </p>
+                    <div class="graph">
+                        <strong>Renewable energy mix</strong>
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-graph-1.png" alt="Renewable Energy Mix" />
+                    </div>
                     <p>
                         <strong>Market regulations</strong><br />
-                        There is a favourable regulatory climate as a result of laws like the revisions to the
-                        Foreign Investment Act, the Public Service Act, and the Retail Trade Liberalization Act.
+                        There is a favourable regulatory climate as a result of laws like 
+                        the revisions to the Foreign Investment Act, the Public Service Act, and the 
+                        Retail Trade Liberalization Act.
                     </p>
+                </div>
+                <div class="location-content__media">
+
+                
+                    <div style="width: 85%; margin: 0 auto; display: block;">
+                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/philippines-location.svg"); ?>
+                    </div>
 
                     <div class="image-cycle">
                         <div class="image-cycle__images">
@@ -66,17 +73,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                             <?php endfor; ?>
                         </div>
                     </div>
-                </div>
-                <div class="location-content__media">
-                    <div style="width: 85%; margin: 0 auto; display: block;">
-                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/philippines-location.svg"); ?>
-                    </div>
-                    
-                    <div class="pie-chart">
-                        <h4>Renewable Energy Mix</h4>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-pie-1.png" alt="Renewable Energy Mix" />
-                    </div>
-
+                
                 </div>
             </div>
         </div>
@@ -91,41 +88,48 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <h3>Thailand</h3>
                     <p>
                         <strong>Population dynamics</strong><br/>
-                        With a GDP of 506 billion USD, Thailand is a dynamic market in Southeast Asia. The
-                        population is very technology focused, with 85% using the internet and averaging over 2.5
-                        hours per day on social media.
+                        With a GDP of 506 billion USD, Thailand is a dynamic market in Southeast Asia. 
+                        The population is very technology focused, with 85% using the internet and averaging over 2.5 hours per day on social media.
                     </p>
+                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable energy</strong><br/>
-                        In 2022, 15% of Thailand’s energy production was comprised of clean energy. The main
-                        source of renewable energy produced is bioenergy, with an increase in wind and solar in
-                        recent years.
+                        Thailand’s power market is partially liberalised. Generation is open to private companies while distribution, transmission and sales are operated by state owned utilities. The country’s energy mix is dominated by natural gas 66% and coal 20%, biofuels and hydro account for 9% and 3% respectively while solar makes up ~3%.
+                        <br/><br/>
+                        The government has set a target of 30% renewable energy for power capacity in 2036; there are also targets of 15 GW (now at 3.4GW) of solar  and 3GW (now 1.5GW) of wind; 
+                        They also aim to be net zero by 2065 but have not set tangible renewable energy targets.
                     </p>
-                    <p>
-                        <strong>Geographic challenges</strong><br />
-                        The main geographic challenges faced in Thailand are risk of flooding, landslides, fires and
-                        wind damage.
-                    </p>
+                    <div class="graph">
+                        <strong>Renewable energy mix</strong>
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-graph-1.png" alt="Renewable Energy Mix" />
+                    </div>
                     <p>
                         <strong>Market regulations</strong><br />
-                            Thailand imposes stringent requirements on the construction of data centres. A business
-                            planning on building and operating a data centre in Thailand must obtain a BOI Investment
-                            Promotion Certificate and a Telecom License. At 2022 APEC Summit Thailand made it clear
-                            that they are trying to strike a balance between performance and sustainability, prioritising
-                            recovery and growth, while keeping an eye on sustainable development that will allow the
-                            country to thrive
+                        Thailand imposes stringent requirements on the construction of data centres. 
+                        A business planning on building and operating a data centre in Thailand must obtain a 
+                        BOI Investment Promotion Certificate and a Telecom License. At 2022 APEC Summit 
+                        Thailand made it clear that they are trying to strike a balance between performance 
+                        and sustainability, prioritising recovery and growth, while keeping an eye on sustainable 
+                        development that will allow the country to thrive
                     </p>
                 </div>
                 <div class="location-content__media">
 
-                    <div style="width: 85%; margin: 0 auto; display: block;">
+                    <div style="width: 75%; margin: 0 auto; display: block;">
                         <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/thailand-location.svg"); ?>
                     </div>
                     
 
-                    <div class="pie-chart">
-                        <h4>Renewable Energy Mix</h4>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-pie-1.png" alt="Renewable Energy Mix" />
+                    <div class="image-cycle">
+                        <div class="image-cycle__images">
+                            <?php for ($i = 1; $i <= 3; $i++): ?>
+                            <div class="image-slide">
+                                <div class="image">
+                                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-slide-image-<?= $i ?>.jpg" alt="Philippines Image <?= $i ?>" />
+                                </div>
+                            </div>
+                            <?php endfor; ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,42 +145,32 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <h3>Vietnam</h3>
                     <p>
                         <strong>Population dynamics</strong><br/>
-                        Vietnam has a relatively young population with a median age of 32. 71% of the population
-                        uses the internet, with an average of 2.5 hours per day spent on social media. The
-                        country is one of the fastest-growing digital economies in Southeast Asia and on track to
-                        reach an internet economy worth $57 billion by 2025. This clearly demonstrates the
-                        growing demand for data centre infrastructure in the region.
+                        Vietnam has a relatively young population with a median age of 32. 71% of 
+                        the population uses the internet, with an average of 2.5 hours per day spent on social media. 
+                        The country is one of the fastest-growing digital economies in 
+                        Southeast Asia and on track to reach an internet economy worth $57 billion by 2025. 
+                        This clearly demonstrates the growing demand for data centre infrastructure in the region.
                     </p>
+                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable energy</strong><br/>
-                        Energy production in Vietnam is currently 51% renewable. The main green energy source in
-                        Vietnam is hydro, however, there is an aim to increase solar capabilities to help reduce
-                        reliance on generation from coal.
+                        Vietnam’s energy market is heavily regulated with transmission, distribution and sales controlled by the state-owned Vietnam Electricity (EVN), although generation is partially liberalised. The energy mix is comprised largely of coal 53% and hydro 26%; followed by natural gas 16% and other renewables 5%; although Vietnam already accounts for the largest solar capacity in Southeast Asia.
+                        <br/><br/>
+                        The country has a draft Power Development Plan (Draft PDP8) targeting an increase in renewable generation to 32% by 2030, outstripping even coal which is expected to account for 27%
                     </p>
+                    <div class="graph">
+                        <strong>Renewable energy mix</strong>
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-graph-1.png" alt="Renewable Energy Mix" />
+                    </div>
                     <p>
-                        <strong>Geographic challenges</strong><br />
-                        The biggest geographical challenges facing Vietnam are the exposure to
-                        hydro-meteorological hazards such as severe storms, typhoons and floods. It is vulnerable
-                        to earthquakes and tsunamis.
-                    </p>
-                    <p>
-                        <strong>Market regulations</strong><br />
-                        Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable
-                        regulatory landscape for data centre investment, including a decision in 2020 to approve a
-                        National Digital Transformation Programme, a cybersecurity law, and a decree to force
-                        onshore online service providers to store Vietnamese users’ information inside the country.
+                        <strong>Market regulations</strong>
+                        Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable regulatory landscape for data centre investment, including a decision in 2020 to approve a National Digital Transformation Programme, a cybersecurity law, and a decree to force onshore online service providers to store Vietnamese users’ information inside the country.
                     </p>
                 </div>
                 <div class="location-content__media">
                     <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-location.svg" 
                         style="width: 75%; margin: 0 auto; display: block;"
                         alt="Vietnam" />
-                    <div class="pie-chart">
-                        <h4>Renewable Energy Mix</h4>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-pie-1.png" 
-                            style="width: 75%; margin: 0 auto; display: block;"
-                              alt="Renewable Energy Mix" />
-                    </div>
                 </div>
             </div>
         </div>
@@ -190,27 +184,22 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <h3>Indonesia</h3>
                     <p>
                         <strong>Population dynamics</strong><br/>
-                        Indonesia has more than 210 million internet users out of a total population of 270 million,
-                        and daily social media usage is high at an average of 3.28 hours per day. It also has the
-                        highest GDP in Southeast Asia at 1.186 trillion USD, making it an important data centre
-                        investment market.
+                        Indonesia has more than 210 million internet users out of a total population of 270 million, and daily social media usage is high at an average of 3.28 hours per day. It also has the highest GDP in Southeast Asia at 1.186 trillion USD, making it an important data centre investment market.
                     </p>
+                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable energy</strong><br/>
-                        There has been a clear transition in Indonesia to shift away from coal to green power. Clean
-                        energy currently makes up 18% of the country’s energy production, with hydro, geothermal,
-                        and bioenergy being the leading forms of alternative energy generation.
+                        There has been a clear transition in Indonesia away from coal to green power. Clean energy currently makes up 18% of the country’s production, with hydro 8%, bioenergy 5% and geothermal 5% being the leading forms of alternative energy generation.<br/>
+                        The market is partly liberalised; private companies can participate in generation while distribution, transmission, and sales are controlled by  the state owned company PLN.<br/>
+                        The government has set a target of 23% renewable energy by 2025 and 31% by 2050. They have set out a 10-year electricity procurement plan (RUPTL.2) where the government targets a 52% share of renewables in new capacity additions (21GW out of total 41GW, mainly from hydro, solar and geothermal).
                     </p>
-                    <p>
-                        <strong>Geographic challenges</strong><br />
-                        Indonesia faces a variety of geographic challenges that include landslides, tsunamis, fires,
-                        floods and earthquakes.
-                    </p>
+                    <div class="graph">
+                        <strong>Renewable energy mix</strong>
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-graph-1.png" alt="Renewable Energy Mix" />
+                    </div>
                     <p>
                         <strong>Market regulations</strong><br />
-                        The Indonesian government mandates that new data centres must be built and operated
-                        using locally-sourced materials and power. In addition data centres serving the financial
-                        sector must abide by the banking rules and meet IT compliance standards.
+                        The Indonesian government mandates that new data centres must be built and operated using locally-sourced materials and power. In addition data centres serving the financial sector must abide by the banking rules and meet IT compliance standards.
                     </p>
                 </div>
                 <div class="location-content__media">
@@ -218,10 +207,6 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         style="width: 100%; margin: 0 auto; display: block;"
                         alt="Philippines Bankok" />
 
-                    <div class="pie-chart">
-                        <h4>Renewable Energy Mix</h4>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-pie-1.png" alt="Renewable Energy Mix" />
-                    </div>
                 </div>
             </div>
         </div>

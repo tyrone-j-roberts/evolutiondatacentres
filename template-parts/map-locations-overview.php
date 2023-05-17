@@ -54,7 +54,7 @@
         <h4>Thailand</h4>
         <ul>
             <li>Enterprise Cloud adoption</li>
-            <li>Adoption AI and Machine Learning</li>
+            <li>Adoption of AI and Machine Learning</li>
             <li>5G Network expansion</li>
             <li>eCommerce and Digital Services growth</li>
         </ul>

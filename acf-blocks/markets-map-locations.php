@@ -163,7 +163,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-graph-1.png" alt="Renewable Energy Mix" />
                     </div>
                     <p>
-                        <strong>Market regulations</strong>
+                        <strong>Market regulations</strong><br />
                         Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable regulatory landscape for data centre investment, including a decision in 2020 to approve a National Digital Transformation Programme, a cybersecurity law, and a decree to force onshore online service providers to store Vietnamese users’ information inside the country.
                     </p>
                 </div>

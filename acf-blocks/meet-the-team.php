@@ -52,7 +52,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
             <?php if ($i % 2) :  ?>
 
-                <div class="centreWrapper clearfix">
+                <div class="centreWrapper clearfix" id="team-member-<?= $team_member_id ?>">
 
                     <div class="blockRight3 block5 bMargin50">
                         <div class="teamImgWrap">
@@ -69,7 +69,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                 </div>
             <?php else : ?>
 
-                <div class="centreWrapper clearfix">
+                <div class="centreWrapper clearfix" id="team-member-<?= $team_member_id ?>">
                     <?php
                     $image_wrap_classes = "";
                     $image_inner_class = "";

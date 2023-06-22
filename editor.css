@@ -2941,6 +2941,9 @@ h5 {
     color: #ffffff;
     text-decoration: none; }
 
+div[id] {
+  scroll-margin-top: 100px; }
+
 .background {
   position: absolute;
   top: 0;

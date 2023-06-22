@@ -30,10 +30,10 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     <div class="meet-the-team-grid__grid">
         <?php foreach ($team_members as $team_member): ?>
             <div class="team-member">
-                <div class="team-member__image">
+                <a class="team-member__image" href="/about-us#team-member-<?= $team_member->ID ?>">
                     <img src="<?= get_the_post_thumbnail_url( $team_member, 'medium' ) ?>" alt="<?= $team_member->post_title ?>" />
                     <div class="frame" style="background-image: url('<?= get_stylesheet_directory_uri() . '/assets/images/team-member-image-frame.png' ?>');"></div>
-                </div>
+                </a>
                 <div class="team-member__details">
                     <h4><?= $team_member->post_title; ?></h4>
                     <p><?= get_field('job_title', $team_member); ?></p>

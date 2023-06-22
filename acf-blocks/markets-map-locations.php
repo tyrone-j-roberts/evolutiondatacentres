@@ -39,10 +39,10 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <p>&nbsp;</p>
                     <p>
                         <strong>Renewable energy</strong><br/>
-                        The Philippines’ energy market is liberalised with generation, distribution, and sales open to private participation. 
-                        The energy mix is dominated by coal 47% and natural gas 22%; hydro and geothermal energy account for 15% and 7% respectively, while solar makes up &lt;4%.
+                        The Philippines’ energy market is liberalised with generation, distribution, and sales open to private participation, which means users are able to contract directly with renewable energy developers. 
+                        Although its energy mix is dominated by coal (47%) and natural gas (22%), it has the 3rd largest geothermal resource in the world, which makes it a very good option for baseload demand. 
                         <br/><br/>
-                        There is a national target to increase the share of renewable energy in the primary mix to 50% by 2040, this includes the addition of new renewable capacity of 9.9GW by 2030.
+                        Together with a moratorium on new coal plants, there is a national target to increase the share of renewable energy in the primary mix to 50% by 2040, this includes the addition of new renewable capacity of 9.9GW by 2030. These factors are driving the largest renewable energy development in South East Asia.
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
@@ -54,12 +54,17 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         the revisions to the Foreign Investment Act, the Public Service Act, and the 
                         Retail Trade Liberalization Act.
                     </p>
+                    <p>
+                        <strong>Site Overview</strong><br />
+                        The site is located in Gateway Business Park, General Trias, Cavite, the Philippines and occupies an area of around 40,000 sqm. We are working with Megawide Construction Corp, who is a conglomerate with substantial infrastructure and renewable power capabilities in the region. 
+                        The IT load is able to support up to 69MW, split into 3 stages with a projected PUE of &lt;1.4.
+                    </p>
                 </div>
                 <div class="location-content__media">
 
                 
                     <div style="width: 85%; margin: 0 auto; display: block;">
-                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/philippines-location.svg"); ?>
+                        <?= file_get_contents(get_stylesheet_directory() . "/assets/images/philippines-location.svg"); ?>
                     </div>
 
                     <div class="image-cycle">
@@ -112,11 +117,15 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         and sustainability, prioritising recovery and growth, while keeping an eye on sustainable 
                         development that will allow the country to thrive
                     </p>
+                    <p>
+                        <strong>Site Overview</strong><br />
+                        The site will be located at Bangan Trad Road, Bangkok and occupies an area of around 20,000 sqm. We are working with one of the largest property and development companies in Thailand. The IT load is able to support up to 34MW, split into 2 stages with a projected PUE of &lt;1.4.
+                    </p>
                 </div>
                 <div class="location-content__media">
 
                     <div style="width: 75%; margin: 0 auto; display: block;">
-                        <?= file_get_contents(get_stylesheet_directory_uri() . "/assets/images/thailand-location.svg"); ?>
+                        <?= file_get_contents(get_stylesheet_directory() . "/assets/images/thailand-location.svg"); ?>
                     </div>
                     
 
@@ -168,7 +177,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                 </div>
                 <div class="location-content__media">
-                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-location.svg" 
+                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-location.svg?t=<?= time() ?>" 
                         style="width: 75%; margin: 0 auto; display: block;"
                         alt="Vietnam" />
                 </div>

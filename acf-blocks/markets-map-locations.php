@@ -17,6 +17,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
         <div class="container">
             <h3>Target Regions and Market Drivers</h3>
             <div class="map-wrapper">
+                <?php include get_template_directory() . '/template-parts/map-locations-overview-popup.php' ?>
                 <?php include get_template_directory() . '/template-parts/map-locations-overview.php' ?>
                 <?php include get_template_directory() . '/template-parts/evo-map.svg.php' ?>
             </div>
@@ -46,7 +47,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-graph-1.png" alt="Renewable Energy Mix" />
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-chart.png" alt="Renewable Energy Mix" />
                     </div>
                     <p>
                         <strong>Market regulations</strong><br />
@@ -106,7 +107,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-graph-1.png" alt="Renewable Energy Mix" />
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-chart.png" alt="Renewable Energy Mix" />
                     </div>
                     <p>
                         <strong>Market regulations</strong><br />
@@ -169,7 +170,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-graph-1.png" alt="Renewable Energy Mix" />
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/vietnam-chart.png" alt="Renewable Energy Mix" />
                     </div>
                     <p>
                         <strong>Market regulations</strong><br />
@@ -204,7 +205,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-graph-1.png" alt="Renewable Energy Mix" />
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-chart.png" alt="Renewable Energy Mix" />
                     </div>
                     <p>
                         <strong>Market regulations</strong><br />
@@ -234,36 +235,104 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
         var mapLocations = mapWrapperEl.querySelectorAll('.map-location');
 
         var activeLocation = null;
+        var activeLocationOverview = null;
 
         for (let i = 0; i < mapLocations.length; i++) {
-            mapLocations[i].addEventListener('mouseenter', function(e) {
+            // mapLocations[i].addEventListener('mouseenter', function(e) {
+
+            //     if (activeLocation) {
+            //         activeLocation.classList.remove('active');
+            //         activeLocation = null;
+            //     }
+
+            //     if (activeLocationOverview) {
+            //         activeLocationOverview.classList.remove('active');
+            //         activeLocationOverview = null;
+            //     }
+
+            //     var locationName = e.currentTarget.dataset.location;
+            //     var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
+            //     locationOverviewElement.classList.add('active')
+            //     activeLocationOverview = locationOverviewElement;
+            //     e.currentTarget.classList.add('active');
+            //     activeLocation = e.currentTarget;
+            // });
+
+            mapLocations[i].addEventListener('click', function(e) {
+                // var locationName = e.currentTarget.dataset.location;
+                // var locationElement = document.getElementById('LocationSection_' + locationName);
+                
+                // if (!locationElement) return;
+                
+                // var offset = 10;
+
+                // var solidHeader = document.querySelector('header.solid-header');
+                
+                // if (solidHeader) {
+                //     offset = solidHeader.clientHeight;
+                // }
+
+                // window.scrollTo({top: (locationElement.getBoundingClientRect().top + window.pageYOffset) - offset , behavior: 'smooth'});
+
+
+                if (activeLocation) {
+                    activeLocation.classList.remove('active');
+                    activeLocation = null;
+                }
+
+                if (activeLocationOverview) {
+                    activeLocationOverview.classList.remove('active');
+                    activeLocationOverview = null;
+                }
+
                 var locationName = e.currentTarget.dataset.location;
                 var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
                 locationOverviewElement.classList.add('active')
-                mapWrapperEl.dataset.locationTooltipText = locationName;
+                activeLocationOverview = locationOverviewElement;
+                e.currentTarget.classList.add('active');
+                activeLocation = e.currentTarget;
             });
 
-            mapLocations[i].addEventListener('click', function(e) {
-                var locationName = e.currentTarget.dataset.location;
-                var locationElement = document.getElementById('LocationSection_' + locationName);
-                
-                if (!locationElement) return;
-                
-                var offset = 10;
+            mapWrapperEl.addEventListener('mouseleave', function(e) {
 
-                var solidHeader = document.querySelector('header.solid-header');
-                
-                if (solidHeader) {
-                    offset = solidHeader.clientHeight;
+                if (activeLocation) {
+                    activeLocation.classList.remove('active');
+                    activeLocation = null;
                 }
 
-                window.scrollTo({top: (locationElement.getBoundingClientRect().top + window.pageYOffset) - offset , behavior: 'smooth'});
+                if (activeLocationOverview) {
+                    activeLocationOverview.classList.remove('active');
+                    activeLocationOverview = null;
+                }
             });
+        }
 
-            mapLocations[i].addEventListener('mouseleave', function(e) {
-                var locationName = e.currentTarget.dataset.location;
-                var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
-                locationOverviewElement.classList.remove('active')
+        const overviewModalCloseEls = document.querySelectorAll('.overview-modal__curtain, .overview-modal__close');
+
+        for (let i = 0; i < overviewModalCloseEls.length; i++) {
+            overviewModalCloseEls[i].addEventListener('click', function(e) {
+                const modal = e.currentTarget.closest('.overview-modal');
+
+                if (!modal) return;
+
+                modal.classList.remove('active');
+            });
+            
+        }
+
+        const overviewModalTriggers = document.querySelectorAll('button[data-modal]');
+
+        for (let i = 0; i < overviewModalTriggers.length; i++) {
+            overviewModalTriggers[i].addEventListener('click', function(e) {
+
+                const modalId = e.currentTarget.dataset.modal;
+
+                const modal = document.getElementById(modalId);
+
+                if (!modal) return;
+
+                modal.classList.add('active');
+
             });
         }
 

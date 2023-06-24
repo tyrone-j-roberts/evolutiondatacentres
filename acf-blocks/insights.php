@@ -25,11 +25,21 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     <?php if ($insights->have_posts()) : ?>
         <?php while ($insights->have_posts()) : $insights->the_post(); ?>
 
+            <?php global $post; ?>
+
             <?php $button = get_field('button', get_the_ID()); ?>
 
             <div class="centreWrapper">
-                <div class="blockLeft5">
+                <div class="blockLeft5 insight-image-wrapper">
                     <?php the_post_thumbnail('full'); ?>
+                    <?php $tags = get_the_terms($post, 'insight_tag'); ?>
+                    <?php if (is_array($tags) && !empty($tags)): ?>
+                    <div class="badges">
+                        <?php foreach($tags as $tag): ?>
+                        <div class="badge"><?= $tag->name ?></div>
+                        <?php endforeach; ?>
+                    </div>
+                    <?php endif; ?>
                 </div>
                 <div class="blockRight5 txtLeft">
                     <h5 class="green"><?php the_title() ?></h5>

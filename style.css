@@ -2938,6 +2938,19 @@ h5 {
 div[id] {
   scroll-margin-top: 100px; }
 
+.insight-image-wrapper {
+  position: relative; }
+  .insight-image-wrapper .badges {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+    .insight-image-wrapper .badges .badge {
+      background-color: #0B7F36;
+      color: #ffffff;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 20px; }
+
 .background {
   position: absolute;
   top: 0;
@@ -3706,8 +3719,7 @@ div[id] {
       gap: 4em; }
     .markets-map-locations__location .location-content .pie-chart,
     .markets-map-locations__location .location-content .graph {
-      margin: 5em 0;
-      border-bottom: 2px solid black; }
+      margin: 5em 0; }
       .markets-map-locations__location .location-content .pie-chart h4,
       .markets-map-locations__location .location-content .graph h4 {
         text-align: center;
@@ -3859,6 +3871,14 @@ div[id] {
         line-height: 1.6;
         font-size: 0.95em;
         font-weight: 500; }
+      .map-wrapper .location-overview__details .button-link {
+        background-color: #0b7f36;
+        border-color: #0b7f36;
+        color: #ffffff;
+        font-size: 18px; }
+        .map-wrapper .location-overview__details .button-link:hover {
+          background: none;
+          color: #0b7f36; }
     @media (max-width: 1220px) {
       .map-wrapper .location-overview {
         right: -4%;
@@ -3881,7 +3901,7 @@ div[id] {
   .map-wrapper path.map-location {
     cursor: pointer;
     transition: fill 0.2s ease; }
-    .map-wrapper path.map-location:hover {
+    .map-wrapper path.map-location:hover, .map-wrapper path.map-location.active {
       fill: #c96594 !important; }
   @media (max-width: 768px) {
     .map-wrapper::after {
@@ -3901,6 +3921,67 @@ div[id] {
       transform: none; }
     #LocationSection_Indonesia .location-content__media .pie-chart {
       margin-top: 0; } }
+
+.overview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; }
+  .overview-modal.active {
+    display: flex; }
+  .overview-modal__curtain {
+    opacity: 0.7;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .overview-modal__inner {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative; }
+  .overview-modal__header {
+    background-color: #0b7f36;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative; }
+    .overview-modal__header h5 {
+      margin: 0;
+      font-size: 22px; }
+  .overview-modal__close {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 2.5em;
+    color: #ffffff; }
+  .overview-modal__row {
+    display: flex;
+    align-items: center; }
+    .overview-modal__row .column-1 {
+      width: 30%;
+      padding-right: 10%;
+      font-weight: 600; }
+    .overview-modal__row .column-2 {
+      width: 70%; }
+      .overview-modal__row .column-2 ul li {
+        margin-bottom: 0.5em; }
+        .overview-modal__row .column-2 ul li:last-child {
+          margin-bottom: 0; }
 
 .footer #menu-footer-left,
 .footer #menu-footer-right {

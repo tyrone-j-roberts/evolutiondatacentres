@@ -27,6 +27,7 @@
             <li>5G Network expansion</li>
             <li>Growth of AI and Machine Learning</li>
         </ul>
+        <button type="button" class="button-link" data-modal="LocationOverviewModal_Philippines">View more</button>
     </div>
 </div>
 
@@ -58,6 +59,7 @@
             <li>5G Network expansion</li>
             <li>eCommerce and Digital Services growth</li>
         </ul>
+        <button type="button" class="button-link" data-modal="LocationOverviewModal_Thailand">View more</button>
     </div>
 </div>
 
@@ -90,6 +92,7 @@
             <li>5G Network Expansion</li>
             <li>AI and Big Data Analytics</li>
         </ul>
+        <button type="button" class="button-link" data-modal="LocationOverviewModal_Vietnam">View more</button>
     </div>
 </div>
 

@@ -2949,13 +2949,16 @@ div[id] {
   .insight-image-wrapper .badges {
     position: absolute;
     top: 10px;
-    right: 10px; }
+    left: 10px; }
     .insight-image-wrapper .badges .badge {
       background-color: #0B7F36;
       color: #ffffff;
       font-size: 12px;
       padding: 5px 10px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      margin-bottom: 5px; }
+      .insight-image-wrapper .badges .badge:last-child {
+        margin-bottom: 0; }
 
 .background {
   position: absolute;

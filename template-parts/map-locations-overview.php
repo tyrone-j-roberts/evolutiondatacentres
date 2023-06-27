@@ -97,7 +97,7 @@
 </div>
 
 <div class="location-overview" id="LocationOverview_Indonesia">
-    <div class="location-overview__stats" style="border: none">
+    <div class="location-overview__stats" style="border: 2px solid transparent;">
         <h4>&nbsp;</h4>
         <div class="location-overview__stat cap">
             <div class="icon-wrapper">

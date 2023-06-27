@@ -215,7 +215,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                 <div class="location-content__media">
                     <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-location.svg" 
                         style="width: 100%; margin: 0 auto; display: block;"
-                        alt="Philippines Bankok" />
+                        alt="Indonesia" />
 
                 </div>
             </div>
@@ -236,44 +236,10 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
 
         var activeLocation = null;
         var activeLocationOverview = null;
+        var mouseIn = false;
 
         for (let i = 0; i < mapLocations.length; i++) {
-            // mapLocations[i].addEventListener('mouseenter', function(e) {
-
-            //     if (activeLocation) {
-            //         activeLocation.classList.remove('active');
-            //         activeLocation = null;
-            //     }
-
-            //     if (activeLocationOverview) {
-            //         activeLocationOverview.classList.remove('active');
-            //         activeLocationOverview = null;
-            //     }
-
-            //     var locationName = e.currentTarget.dataset.location;
-            //     var locationOverviewElement = document.getElementById('LocationOverview_' + locationName);
-            //     locationOverviewElement.classList.add('active')
-            //     activeLocationOverview = locationOverviewElement;
-            //     e.currentTarget.classList.add('active');
-            //     activeLocation = e.currentTarget;
-            // });
-
-            mapLocations[i].addEventListener('click', function(e) {
-                // var locationName = e.currentTarget.dataset.location;
-                // var locationElement = document.getElementById('LocationSection_' + locationName);
-                
-                // if (!locationElement) return;
-                
-                // var offset = 10;
-
-                // var solidHeader = document.querySelector('header.solid-header');
-                
-                // if (solidHeader) {
-                //     offset = solidHeader.clientHeight;
-                // }
-
-                // window.scrollTo({top: (locationElement.getBoundingClientRect().top + window.pageYOffset) - offset , behavior: 'smooth'});
-
+            mapLocations[i].addEventListener('mouseenter', function(e) {
 
                 if (activeLocation) {
                     activeLocation.classList.remove('active');
@@ -293,17 +259,47 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                 activeLocation = e.currentTarget;
             });
 
+            mapLocations[i].addEventListener('click', function(e) {
+                var locationName = e.currentTarget.dataset.location;
+                var locationElement = document.getElementById('LocationSection_' + locationName);
+                
+                if (!locationElement) return;
+                
+                var offset = 10;
+
+                var solidHeader = document.querySelector('header.solid-header');
+                
+                if (solidHeader) {
+                    offset = solidHeader.clientHeight;
+                }
+
+                window.scrollTo({top: (locationElement.getBoundingClientRect().top + window.pageYOffset) - offset , behavior: 'smooth'});
+            });
+
+
+            mapWrapperEl.addEventListener('mouseenter', function(e) {
+                mouseIn = true;
+            });
+
             mapWrapperEl.addEventListener('mouseleave', function(e) {
 
-                if (activeLocation) {
-                    activeLocation.classList.remove('active');
-                    activeLocation = null;
-                }
+                mouseIn = false;
 
-                if (activeLocationOverview) {
-                    activeLocationOverview.classList.remove('active');
-                    activeLocationOverview = null;
-                }
+                setTimeout(() => {
+
+                    if (mouseIn) return;
+
+                    if (activeLocation) {
+                        activeLocation.classList.remove('active');
+                        activeLocation = null;
+                    }
+
+                    if (activeLocationOverview) {
+                        activeLocationOverview.classList.remove('active');
+                        activeLocationOverview = null;
+                    }
+                }, 10000);
+
             });
         }
 

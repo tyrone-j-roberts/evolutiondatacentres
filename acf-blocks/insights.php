@@ -30,7 +30,8 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
             <?php $button = get_field('button', get_the_ID()); ?>
 
             <div class="centreWrapper">
-                <div class="blockLeft5 insight-image-wrapper">
+                <div class="blockLeft5">
+                    <div class="insight-image-wrapper">
                     <?php the_post_thumbnail('full'); ?>
                     <?php $tags = get_the_terms($post, 'insight_tag'); ?>
                     <?php if (is_array($tags) && !empty($tags)): ?>
@@ -40,6 +41,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <?php endforeach; ?>
                     </div>
                     <?php endif; ?>
+                    </div>
                 </div>
                 <div class="blockRight5 txtLeft">
                     <h5 class="green"><?php the_title() ?></h5>

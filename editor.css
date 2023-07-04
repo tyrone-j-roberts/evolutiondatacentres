@@ -2945,7 +2945,15 @@ div[id] {
   scroll-margin-top: 100px; }
 
 .insight-image-wrapper {
-  position: relative; }
+  position: relative;
+  padding-top: 66%; }
+  .insight-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   .insight-image-wrapper .badges {
     position: absolute;
     top: 10px;

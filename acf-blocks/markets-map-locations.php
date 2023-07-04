@@ -15,7 +15,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     
     <div class="markets-map-locations__map">
         <div class="container">
-            <h3>Target Regions and Market Drivers</h3>
+            <h3>Target regions and market drivers</h3>
             <div class="map-wrapper">
                 <?php include get_template_directory() . '/template-parts/map-locations-overview-popup.php' ?>
                 <?php include get_template_directory() . '/template-parts/map-locations-overview.php' ?>
@@ -56,7 +56,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         Retail Trade Liberalization Act.
                     </p>
                     <p>
-                        <strong>Site Overview</strong><br />
+                        <strong>Site overview</strong><br />
                         The site is located in Gateway Business Park, General Trias, Cavite, the Philippines and occupies an area of around 40,000 sqm. We are working with Megawide Construction Corp, who is a conglomerate with substantial infrastructure and renewable power capabilities in the region. 
                         The IT load is able to support up to 69MW, split into 3 stages with a projected PUE of &lt;1.4.
                     </p>
@@ -119,7 +119,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         development that will allow the country to thrive
                     </p>
                     <p>
-                        <strong>Site Overview</strong><br />
+                        <strong>Site overview</strong><br />
                         The site will be located at Bangan Trad Road, Bangkok and occupies an area of around 20,000 sqm. We are working with one of the largest property and development companies in Thailand. The IT load is able to support up to 34MW, split into 2 stages with a projected PUE of &lt;1.4.
                     </p>
                 </div>

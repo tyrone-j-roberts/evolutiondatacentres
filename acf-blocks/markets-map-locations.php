@@ -15,7 +15,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
     
     <div class="markets-map-locations__map">
         <div class="container">
-            <h3>Target regions and market drivers</h3>
+            <h3>Overview</h3>
             <div class="map-wrapper">
                 <?php include get_template_directory() . '/template-parts/map-locations-overview-popup.php' ?>
                 <?php include get_template_directory() . '/template-parts/map-locations-overview.php' ?>
@@ -51,9 +51,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </div>
                     <p>
                         <strong>Market regulations</strong><br />
-                        There is a favourable regulatory climate as a result of laws like 
-                        the revisions to the Foreign Investment Act, the Public Service Act, and the 
-                        Retail Trade Liberalization Act.
+                        The electricity market is partially deregulated, with a growing demand for corporate PPAs. 
+                        There is a favourable regulatory climate as a result of laws like the revisions to the 
+                        Foreign Investment Act, the Public Service Act, and the Retail Trade Liberalization Act.
                     </p>
                     <p>
                         <strong>Site overview</strong><br />
@@ -116,7 +116,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         BOI Investment Promotion Certificate and a Telecom License. At 2022 APEC Summit 
                         Thailand made it clear that they are trying to strike a balance between performance 
                         and sustainability, prioritising recovery and growth, while keeping an eye on sustainable 
-                        development that will allow the country to thrive
+                        development that will allow the country to thrive.
                     </p>
                     <p>
                         <strong>Site overview</strong><br />
@@ -166,7 +166,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <strong>Renewable energy</strong><br/>
                         Vietnam’s energy market is heavily regulated with transmission, distribution and sales controlled by the state-owned Vietnam Electricity (EVN), although generation is partially liberalised. The energy mix is comprised largely of coal 53% and hydro 26%; followed by natural gas 16% and other renewables 5%; although Vietnam already accounts for the largest solar capacity in Southeast Asia.
                         <br/><br/>
-                        The country has a draft Power Development Plan (Draft PDP8) targeting an increase in renewable generation to 32% by 2030, outstripping even coal which is expected to account for 27%
+                        The country has a draft Power Development Plan (Draft PDP8) targeting an increase in renewable generation to 32% by 2030, outstripping even coal which is expected to account for 27%.
                     </p>
                     <div class="graph">
                         <strong>Renewable energy mix</strong>
@@ -175,6 +175,8 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     <p>
                         <strong>Market regulations</strong><br />
                         Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable regulatory landscape for data centre investment, including a decision in 2020 to approve a National Digital Transformation Programme, a cybersecurity law, and a decree to force onshore online service providers to store Vietnamese users’ information inside the country.
+                        <br/><br/>
+                        The Power Development Master Plan 8 in Vietnam represents the latest market regulations in the country's power sector. It outlines the strategic roadmap for power generation, transmission, and distribution, with a focus on renewable energy development, grid integration, and enhancing energy efficiency to meet the growing electricity demand and sustainability goals.
                     </p>
                 </div>
                 <div class="location-content__media">
@@ -201,6 +203,7 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <strong>Renewable energy</strong><br/>
                         There has been a clear transition in Indonesia away from coal to green power. Clean energy currently makes up 18% of the country’s production, with hydro 8%, bioenergy 5% and geothermal 5% being the leading forms of alternative energy generation.<br/>
                         The market is partly liberalised; private companies can participate in generation while distribution, transmission, and sales are controlled by  the state owned company PLN.<br/>
+                        <br/><br/>
                         The government has set a target of 23% renewable energy by 2025 and 31% by 2050. They have set out a 10-year electricity procurement plan (RUPTL.2) where the government targets a 52% share of renewables in new capacity additions (21GW out of total 41GW, mainly from hydro, solar and geothermal).
                     </p>
                     <div class="graph">
@@ -213,10 +216,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </p>
                 </div>
                 <div class="location-content__media">
-                    <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/indonesia-location.svg" 
-                        style="width: 100%; margin: 0 auto; display: block;"
-                        alt="Indonesia" />
-
+                    <div style="width: 100%; margin: 0 auto; display: block;">
+                        <?= file_get_contents(get_stylesheet_directory() . "/assets/images/indonesia-location.svg"); ?>
+                    </div>
                 </div>
             </div>
         </div>

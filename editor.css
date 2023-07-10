@@ -2945,15 +2945,7 @@ div[id] {
   scroll-margin-top: 100px; }
 
 .insight-image-wrapper {
-  position: relative;
-  padding-top: 66%; }
-  .insight-image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+  position: relative; }
   .insight-image-wrapper .badges {
     position: absolute;
     top: 10px;
@@ -3786,6 +3778,11 @@ div[id] {
     .markets-map-locations__location .location-content__text {
       width: 100%; } }
 
+.markets-map-locations__location#LocationSection_Vietnam .location-content {
+  align-items: flex-start; }
+  .markets-map-locations__location#LocationSection_Vietnam .location-content__media {
+    padding-top: 15%; }
+
 .image-cycle {
   width: 100%; }
   .image-cycle__images .slick-list {
@@ -3875,8 +3872,8 @@ div[id] {
         font-size: 1.56em;
         width: 100%; }
       .map-wrapper .location-overview__details ul {
-        padding-left: 0;
-        list-style-position: inside;
+        padding-left: 15px;
+        list-style-position: outside;
         line-height: 1.6;
         font-size: 0.95em;
         font-weight: 500;

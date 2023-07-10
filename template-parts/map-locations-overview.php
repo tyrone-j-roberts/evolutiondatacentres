@@ -26,6 +26,7 @@
             <li>Partner: Megawide Construction Corp.</li>
             <li>Projected PUE: &lt;1.4</li>
         </ul>
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/philippines-slide-image-3.jpg" alt="Philippines image" />
     </div>
 </div>
 
@@ -56,6 +57,7 @@
             <li>Partner: Central Pattana PCL</li>
             <li>Projected PUE: &lt;1.4</li>
         </ul>
+        <img src="<?= get_stylesheet_directory_uri() ?>/assets/images/thailand-slide-image-3.jpg" alt="Philippines image" />
     </div>
 </div>
 
@@ -75,7 +77,7 @@
                 <?= file_get_contents("{$icon_file_path}/icon-date.svg"); ?>
             </div>
             <div class="data">
-            >   COD: 2024
+               COD: 2024
             </div>
         </div>
     </div>

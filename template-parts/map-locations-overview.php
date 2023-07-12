@@ -63,13 +63,13 @@
 
 <div class="location-overview" id="LocationOverview_Vietnam">
     <div class="location-overview__stats">
-        <h4>HCMC, Vietnam</h4>
+        <h4>Vietnam</h4>
         <div class="location-overview__stat cap">
             <div class="icon-wrapper">
                 <?= file_get_contents("{$icon_file_path}/icon-data-center.svg"); ?>
             </div>
             <div class="data">
-                Capacity (IT Load): 20MW
+                Capacity (IT Load): TBA
             </div>
         </div>
         <div class="location-overview__stat year">
@@ -77,7 +77,7 @@
                 <?= file_get_contents("{$icon_file_path}/icon-date.svg"); ?>
             </div>
             <div class="data">
-               COD: 2024
+               COD: TBA
             </div>
         </div>
     </div>

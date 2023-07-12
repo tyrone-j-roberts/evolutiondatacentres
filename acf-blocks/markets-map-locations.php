@@ -37,7 +37,6 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         82% of Filipinos have social media accounts, with a median age of 26.3 and 1.5% population growth annually. 
                         The Philippines has a GDP of 394 billion USD, making it an attractive region for technology investment.
                     </p>
-                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable Energy</strong><br/>
                         The Philippines’ energy market is liberalised with generation, distribution, and sales open to private participation, which means users are able to contract directly with renewable energy developers. 
@@ -103,7 +102,6 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         With a GDP of 506 billion USD, Thailand is a dynamic market in Southeast Asia. 
                         The population is very technology focused, with 85% using the internet and averaging over 2.5 hours per day on social media.
                     </p>
-                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable Energy</strong><br/>
                         Thailand’s power market is partially liberalised. Generation is open to private companies while distribution, transmission and sales are operated by state owned utilities. The country’s energy mix is dominated by natural gas 66% and coal 20%, biofuels and hydro account for 9% and 3% respectively while solar makes up ~3%.
@@ -174,7 +172,6 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         Southeast Asia and on track to reach an internet economy worth $57 billion by 2025. 
                         This clearly demonstrates the growing demand for data centre infrastructure in the region.
                     </p>
-                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable Energy</strong><br/>
                         Vietnam’s energy market is heavily regulated with transmission, distribution and sales controlled by the state-owned Vietnam Electricity (EVN), although generation is partially liberalised. The energy mix is comprised largely of coal 53% and hydro 26%; followed by natural gas 16% and other renewables 5%; although Vietnam already accounts for the largest solar capacity in Southeast Asia.
@@ -225,7 +222,6 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <strong>Population Dynamics</strong><br/>
                         Indonesia has more than 210 million internet users out of a total population of 270 million, and daily social media usage is high at an average of 3.28 hours per day. It also has the highest GDP in Southeast Asia at 1.186 trillion USD, making it an important data centre investment market.
                     </p>
-                    <p>&nbsp;</p>
                     <p>
                         <strong>Renewable Energy</strong><br/>
                         There has been a clear transition in Indonesia away from coal to green power. Clean energy currently makes up 18% of the country’s production, with hydro 8%, bioenergy 5% and geothermal 5% being the leading forms of alternative energy generation.<br/>

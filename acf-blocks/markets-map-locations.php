@@ -213,7 +213,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
         </div>
     </div>
     <!-- /Vietnam -->
-
+    
+    <?php if (false): ?>
+    <!-- Indonesia -->
     <div class="markets-map-locations__location markets-map-locations__location--alt" id="LocationSection_Indonesia">
         <div class="container">
             <div class="location-content">
@@ -258,6 +260,8 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
             </div>
         </div>
     </div>
+    <!-- /Indonesia -->
+    <?php endif; ?>
 
 </div>
 

@@ -3823,11 +3823,12 @@ div[id] {
   position: relative; }
   .map-wrapper .location-overview {
     position: absolute;
-    width: 375px;
+    width: 30%;
+    max-width: 375px;
     top: 45%;
     transform: translateY(-50%);
     align-items: center;
-    right: 10%;
+    right: 0;
     display: none;
     flex-direction: column;
     border: 2px solid #48B45C;
@@ -3901,8 +3902,8 @@ div[id] {
         .map-wrapper .location-overview.active {
           display: none; } }
   .map-wrapper > svg {
-    width: 100%;
-    max-width: 850px;
+    width: 75%;
+    max-width: 750px;
     margin: 0 auto;
     display: block; }
   .map-wrapper path.map-location {

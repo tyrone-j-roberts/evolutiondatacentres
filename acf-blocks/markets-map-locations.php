@@ -53,12 +53,11 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                         <strong>Market Regulations</strong><br />
                         The electricity market is partially deregulated, with a growing demand for corporate PPAs. 
                         There is a favourable regulatory climate as a result of laws like the revisions to the 
-                        Foreign Investment Act, the Public Service Act, and the Retail Trade Liberalization Act.
+                        Foreign Investment Act, the Public Service Act and the Retail Trade Liberalization Act.
                     </p>
                     <p style="margin-bottom: 0.5em">
                         <strong>Market Drivers</strong><br />
                         The following are the factors driving the demand for data centres:
-                 
                     </p>
                     <ul>
                             <li>Business Process Outsourcing growth</li>
@@ -188,9 +187,9 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
                     </div>
                     <p>
                         <strong>Market Regulations</strong><br />
-                        Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable regulatory landscape for data centre investment, including a decision in 2020 to approve a National Digital Transformation Programme, a cybersecurity law, and a decree to force onshore online service providers to store Vietnamese users’ information inside the country.
+                        Vietnam is seeking to reach carbon neutrality by 2050. The country has a favourable regulatory landscape for data centre investment. This includes a decision in 2020 to approve a National Digital Transformation Programme, a cybersecurity law and a decree to force onshore online service providers to store Vietnamese users’ information inside the country.
                         <br/><br/>
-                        The Power Development Master Plan 8 in Vietnam represents the latest market regulations in the country's power sector. It outlines the strategic roadmap for power generation, transmission, and distribution, with a focus on renewable energy development, grid integration, and enhancing energy efficiency to meet the growing electricity demand and sustainability goals.
+                        The Power Development Master Plan 8 in Vietnam, represents the latest market regulations in the country's power sector. It outlines the strategic roadmap for power generation, transmission and distribution. It focuses on renewable energy development, grid integration and enhancing energy efficiency to meet the growing electricity demand and sustainability goals.
                     </p>
                     <p style="margin-bottom: 0.5em">
                         <strong>Market Drivers</strong><br />

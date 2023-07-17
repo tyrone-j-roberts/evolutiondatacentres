@@ -32,15 +32,18 @@ include(locate_template('/acf-blocks/common/block_header.php')); ?>
             <div class="centreWrapper">
                 <div class="blockLeft5">
                     <div class="insight-image-wrapper">
-                    <?php the_post_thumbnail('full'); ?>
-                    <?php $tags = get_the_terms($post, 'insight_tag'); ?>
-                    <?php if (is_array($tags) && !empty($tags)): ?>
-                    <div class="badges">
-                        <?php foreach($tags as $tag): ?>
-                        <div class="badge"><?= $tag->name ?></div>
-                        <?php endforeach; ?>
-                    </div>
-                    <?php endif; ?>
+                        <?php $show_insight_tags = get_option('show_insight_tags', 0); ?>
+                        <?php the_post_thumbnail('full'); ?>
+                        <?php if ($show_insight_tags == '1'): ?>
+                            <?php $tags = get_the_terms($post, 'insight_tag'); ?>
+                            <?php if (is_array($tags) && !empty($tags)): ?>
+                                <div class="badges">
+                                    <?php foreach($tags as $tag): ?>
+                                    <div class="badge"><?= $tag->name ?></div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="blockRight5 txtLeft">

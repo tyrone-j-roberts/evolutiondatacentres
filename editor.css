@@ -3139,6 +3139,8 @@ div[id] {
     .solid-header__nav ul.sub-menu li {
       padding: 0.5em;
       width: 100%; }
+      .solid-header__nav ul.sub-menu li a {
+        color: #ffffff; }
       .solid-header__nav ul.sub-menu li a.menuLine::after {
         background-color: #0A8036; }
   @media (max-width: 768px) {

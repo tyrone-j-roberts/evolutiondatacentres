@@ -34,6 +34,9 @@
             li {
                 padding: 0.5em;
                 width: 100%;
+                a {
+                    color: #ffffff;
+                }
                 a.menuLine::after {
                     background-color: #0A8036;
                 }
